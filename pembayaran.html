@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="theme-color" content="#4C9F70"/>
+    <title>FAMOS</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles/plugins.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="header" id="header">
+        <div class="header-container">
+          <div class="row">
+            <div class="col left">
+              <div class="write-brief"><a class="btn-brief" href="#">Tulis Brief</a></div>
+            </div>
+            <div class="col right">
+              <div class="user-header">
+                <ul>
+                  <li class="questionmark"><a href="#"><img src="images/ic-head-help.png"/></a></li>
+                  <li class="notif"><a href="#"><img src="images/ic-head-notif.png"/></a></li>
+                  <li class="user-acnt"><a href="#"><img src="images/ic-head-account.png"/></a>
+                    <div class="user-acnt_menu">
+                      <ul>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Sunting Profil</span></a></li>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Pengaturan Notifikasi</span></a></li>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Log Out</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <aside class="sidebar" id="sidebar">
+        <h1 class="logo"><a class="header__logo" href="#"><img src="images/logo-famos-orange.png" alt="logo-famos"/></a></h1>
+        <nav class="sidemenu">
+          <ul>
+            <li><a href="home.html">
+                <div class="icon"><img src="images/ic-home.png"/><img class="hover" src="images/ic-home-hover.png"/></div><span>Home</span></a></li>
+            <li><a href="dashboard.html">
+                <div class="icon"><img src="images/ic-dashboard.png"/><img class="hover" src="images/ic-dashboard-hover.png"/></div><span>Dashboard</span></a></li>
+            <li><a href="brief.html">
+                <div class="icon"><img src="images/ic-brief.png"/><img class="hover" src="images/ic-brief-hover.png"/></div><span>Brief</span></a></li>
+            <li><a href="#">
+                <div class="icon"><img src="images/ic-inbox.png"/><img class="hover" src="images/ic-inbox-hover.png"/></div><span>Inbox
+                  <u class="count">3</u></span></a></li>
+            <li class="current-menu-item"><a href="pembayaran.html">
+                <div class="icon"><img src="images/ic-pembayaran.png"/><img class="hover" src="images/ic-pembayaran-hover.png"/></div><span>Pembayaran</span></a></li>
+          </ul>
+        </nav>
+        <div class="dontknow-box">
+          <div class="icon"><img src="images/ic-dontknow.png"/></div>
+          <h4>Belum tau cara menulis brief dengan mudah <br>& jelas?</h4><a href="#">Baca guide disini</a>
+        </div>
+        <div class="needhelp">
+          <div class="img"><img src="images/img-need-help.png"/></div><a href="#">Butuh bantuan ?</a>
+        </div>
+      </aside>
+      <main>
+        <div class="client-content">
+          <div class="client-pembayaran">
+            <div class="page-title">
+              <h2>Pembayaran</h2>
+            </div>
+            <div class="proyek-list_filter">
+              <form action="#">
+                <div class="row">
+                  <div class="col col-6">
+                    <div class="form-group form-search">
+                      <label>&nbsp;</label>
+                      <input class="form-control" type="text" placeholder="Cari pembayaran anda disini …"/><a class="btn btn-primary" href="#">Cari</a>
+                    </div>
+                  </div>
+                  <div class="col col-6">
+                    <label>Filter :</label>
+                    <select class="select">
+                      <option>Semua Pembayaran (6)</option>
+                      <option>Proyek 1</option>
+                      <option>Proyek 2</option>
+                      <option>Proyek 3</option>
+                      <option>Proyek 4</option>
+                      <option>Proyek 5</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <section class="pembayaran-list">
+              <div class="section_title light">
+                <h3>Pembayaran Berhasil</h3>
+              </div>
+              <div class="proyek-list_table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>NOMINAL PEMBAYARAN</th>
+                      <th>JATUH TEMPO</th>
+                      <th>CARA PEMBAYARAN</th>
+                      <th>KETERANGAN</th>
+                      <th>STATUS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="price">Rp.5.000.000</span></td>
+                      <td>1 MEI 2021</td>
+                      <td>Bank Transfer</td>
+                      <td>Lorem Ipsum</td>
+                      <td><span class="lunas">Sudah dibayar</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="price">Rp.5.000.000</span></td>
+                      <td>1 MEI 2021</td>
+                      <td>Bank Transfer</td>
+                      <td>Lorem Ipsum</td>
+                      <td><span class="lunas">Sudah dibayar</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="price">Rp.5.000.000</span></td>
+                      <td>1 MEI 2021</td>
+                      <td>Bank Transfer</td>
+                      <td>Lorem Ipsum</td>
+                      <td><span class="lunas">Sudah dibayar</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section class="pembayaran-list notpaid">
+              <div class="section_title light">
+                <h3>Tagihan Belum dibayar</h3>
+              </div>
+              <div class="proyek-list_table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>NOMINAL PEMBAYARAN</th>
+                      <th>JATUH TEMPO</th>
+                      <th>CARA PEMBAYARAN</th>
+                      <th>KETERANGAN</th>
+                      <th>STATUS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="price">Rp.5.000.000</span></td>
+                      <td>1 MEI 2021</td>
+                      <td>Bank Transfer</td>
+                      <td>Lorem Ipsum</td>
+                      <td><span class="lunas">Sudah dibayar</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="price">Rp.5.000.000</span></td>
+                      <td>1 MEI 2021</td>
+                      <td>Bank Transfer</td>
+                      <td>Lorem Ipsum</td>
+                      <td><span class="lunas">Sudah dibayar</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="price">Rp.5.000.000</span></td>
+                      <td>1 MEI 2021</td>
+                      <td>Bank Transfer</td>
+                      <td>Lorem Ipsum</td>
+                      <td><span class="lunas">Sudah dibayar</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__main">
+          <div class="container">
+            <div class="footer__text">
+              <div class="cpyright">Allright Reserved © Famos Company</div><a href="#">Kebijakan Privasi</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+    <script src="plugins/lity/lity.min.js"></script>
+    <script src="plugins/jquery-marquee/jquery.marquee.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
