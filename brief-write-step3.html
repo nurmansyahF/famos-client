@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="theme-color" content="#4C9F70"/>
+    <title>FAMOS</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles/plugins.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="header no-sidebar" id="header">
+        <div class="header-container">
+          <div class="row">
+            <div class="col left">
+              <h1 class="logo"><a class="header__logo" href="home.html"><img src="images/logo-famos-orange.png" alt="logo-famos"/></a></h1>
+            </div>
+            <div class="col right">
+              <div class="user-header">
+                <ul>
+                  <li class="questionmark"><a href="#"><img src="images/ic-head-help.png"/></a></li>
+                  <li class="notif"><a href="#"><img src="images/ic-head-notif.png"/></a></li>
+                  <li class="user-acnt"><a href="#"><img src="images/ic-head-account.png"/></a>
+                    <div class="user-acnt_menu">
+                      <ul>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Sunting Profil</span></a></li>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Pengaturan Notifikasi</span></a></li>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Log Out</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="client-content">
+          <div class="client-brief write-brief">
+            <div class="page-title">
+              <h2>Layanan apa yang anda cari?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="active">
+                  <u>1</u><span>Key Details</span>
+                </li>
+                <li class="active">
+                  <u>2</u><span>Brief</span>
+                </li>
+                <li class="active">
+                  <u>3</u><span>Contact Details</span>
+                </li>
+              </ul>
+            </div>
+            <div class="form">
+              <div class="contact-list"><a class="btn btn-primary" href="#addContact" data-toggle="modal" data-target="#addContact">Buat Kontak Baru</a>
+                <ul>
+                  <li class="selected">
+                    <div class="card-contact">
+                      <div class="card-contact__name"><span>Anthony
+                          <u class="tag">Utama</u></span><span class="slctd">Dipilih</span></div>
+                      <div class="card-contact__detail">
+                        <ul>
+                          <li>Jabatan : Management Level</li>
+                          <li>+6285100411301</li>
+                        </ul>
+                      </div>
+                      <div class="card-contact__action">
+                        <div class="left"><a class="btn-link" href="#">Ubah</a></div>
+                        <div class="right"><a class="btn-delete" href="#">
+                            <div class="ic"><img src="images/ic-delete.png"/></div></a></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card-contact">
+                      <div class="card-contact__name">Louiz Hutapea</div>
+                      <div class="card-contact__detail">
+                        <ul>
+                          <li>Jabatan : Staff / Employee</li>
+                          <li>+6285100411301</li>
+                        </ul>
+                      </div>
+                      <div class="card-contact__action">
+                        <div class="left"><a class="btn-link" href="#">Ubah</a><a class="btn-link" href="#">Atur Sebagai Utama</a></div>
+                        <div class="right"><a class="btn-delete" href="#">
+                            <div class="ic"><img src="images/ic-delete.png"/></div></a></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card-contact">
+                      <div class="card-contact__name">Lucas Manulang</div>
+                      <div class="card-contact__detail">
+                        <ul>
+                          <li>Jabatan : Staff / Employee</li>
+                          <li>+6285100411301</li>
+                        </ul>
+                      </div>
+                      <div class="card-contact__action">
+                        <div class="left"><a class="btn-link" href="#">Ubah</a><a class="btn-link" href="#">Atur Sebagai Utama</a></div>
+                        <div class="right"><a class="btn-delete" href="#">
+                            <div class="ic"><img src="images/ic-delete.png"/></div></a></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-footer">
+                <div class="group-button">
+                  <div class="left"><a class="btn btn-grey" href="brief-write.html">Kembali</a><a class="btn btn-primary" href="brief-write-confirm.html">Kirim</a></div><a class="btn btn-border primary" href="#">Simpan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__main">
+          <div class="container">
+            <div class="footer__text">
+              <div class="cpyright">Allright Reserved © Famos Company</div><a href="#">Kebijakan Privasi</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal" id="addContact" tabindex="-1">
+      <div class="modal-dialog modal-dialog--centered modal-add-rincian-contact">
+        <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
+          <div class="modal-body">
+            <div class="modal-title">
+              <h3>Buat Rincian Kontak Baru</h3>
+            </div>
+            <form>
+              <div class="form-group">
+                <label>Nama Pengirim</label>
+                <input class="form-control" type="text" placeholder="Tulis jawaban anda disini …"/>
+              </div>
+              <div class="form-group">
+                <label>Jabatan/Posisi Pekerjaan</label>
+                <select class="select" title="Pilih">
+                  <option>C- Level</option>
+                  <option>Management Level</option>
+                  <option>Staff / Employee</option>
+                  <option>SME’s Bussines Owner</option>
+                  <option>Others</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Nomer Telepon/Whatsapp</label>
+                <input class="form-control" type="text" placeholder="Tulis jawaban anda disini …"/>
+              </div>
+              <div class="form-action"><a class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#addContactNotif">Simpan</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="addContactNotif" tabindex="-1">
+      <div class="modal-dialog modal-dialog--centered modal-addcontact-notif">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Simpan Perubahan terakhir anda?</p>
+            <div class="form-action"><a class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#">Simpan</a><a class="btn btn-border primary" href="#" data-dismiss="modal">Batal</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+    <script src="plugins/lity/lity.min.js"></script>
+    <script src="plugins/jquery-marquee/jquery.marquee.min.js"></script>
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="plugins/select2/select2.full.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/moment.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/daterangepicker.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

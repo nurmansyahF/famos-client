@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="theme-color" content="#4C9F70"/>
+    <title>FAMOS</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles/plugins.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="header no-sidebar" id="header">
+        <div class="header-container">
+          <div class="row">
+            <div class="col left">
+              <h1 class="logo"><a class="header__logo" href="home.html"><img src="images/logo-famos-orange.png" alt="logo-famos"/></a></h1>
+            </div>
+            <div class="col right">
+              <div class="user-header">
+                <ul>
+                  <li class="questionmark"><a href="#"><img src="images/ic-head-help.png"/></a></li>
+                  <li class="notif"><a href="#"><img src="images/ic-head-notif.png"/></a></li>
+                  <li class="user-acnt"><a href="#"><img src="images/ic-head-account.png"/></a>
+                    <div class="user-acnt_menu">
+                      <ul>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Sunting Profil</span></a></li>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Pengaturan Notifikasi</span></a></li>
+                        <li><a href="#">
+                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Log Out</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="client-content">
+          <div class="client-brief write-brief">
+            <div class="page-title">
+              <h2>Layanan apa yang anda cari?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="active">
+                  <u>1</u><span>Key Details</span>
+                </li>
+                <li>
+                  <u>2</u><span>Brief</span>
+                </li>
+                <li>
+                  <u>3</u><span>Contact Details</span>
+                </li>
+              </ul>
+            </div>
+            <div class="form">
+              <form class="valthis" action="brief-write-step2.html">
+                <div class="form-group">
+                  <label>Tipe Proyek <i>*</i></label>
+                  <select class="select" title="Pilih Tipe Proyek" name="tipe_proyek" multiple="multiple" required="required" data-size="6">
+                    <optgroup label="Pilih">
+                      <option>Semua Pembayaran (6)</option>
+                      <option>Branding</option>
+                      <option>Branding</option>
+                      <option>Graphic Design</option>
+                      <option>Social Media Management</option>
+                      <option>Digital / Audio Visual</option>
+                      <option>Website / Apps</option>
+                      <option>Wayfinding System</option>
+                    </optgroup>
+                  </select>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group currency">
+                  <label>Total Budget (Rp)<i>*</i></label>
+                  <input class="form-control" type="number" name="total_budget" placeholder="" required="required"/><span class="crncy">Rp</span>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Nama Perusahaan <i>*</i></label><small>Jika Anda tidak diwakili oleh sebuah perusahaan, masukkan nama merek Anda.</small>
+                  <input class="form-control" type="text" name="nama_perusahaan" placeholder="Tulis Nama Perusahaan Anda disini …" required="required"/>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Bidang Perusahaan <i>*</i></label>
+                  <select class="select" title="Pilih Bidang Perusahaan" name="bidang_perusahaan" required="required">
+                    <option>Pilih</option>
+                    <option>Active/Sport</option>
+                    <option>Agriculture & Plantations</option>
+                    <option>Art & Design</option>
+                    <option>Beauty & Skincare</option>
+                    <option>Commerce</option>
+                    <option>Education & Trainings</option>
+                    <option>Entertainment & Media</option>
+                    <option>Fashion & Textiles</option>
+                    <option>Food & Beverages</option>
+                  </select>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Apakah perusahaan Anda terdaftar di Indonesia? <i>*</i></label><small>Entitas terdaftar di Indonesia akan mendapatkan PPN yang ditambahkan ke anggaran Anda</small>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="optradio1" type="radio" name="optradio"/>
+                    <label class="custom-control-label" for="optradio1">Ya</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="optradio2" type="radio" name="optradio"/>
+                    <label class="custom-control-label" for="optradio2">Tidak</label>
+                  </div>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Nama Merk <i>*</i></label><small>Ini akan digunakan sebagai judul proyek</small>
+                  <input class="form-control" type="text" name="nama_merk" placeholder="Tulis Nama Merk Anda disini …" required="required"/>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-footer">
+                  <p class="note">* Wajib diisi</p>
+                  <div class="group-button"><a class="btn btn-primary disabled" href="#">Berikutnya</a>
+                    <button class="btn btn-border primary" type="submit">Simpan</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__main">
+          <div class="container">
+            <div class="footer__text">
+              <div class="cpyright">Allright Reserved © Famos Company</div><a href="#">Kebijakan Privasi</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+    <script src="plugins/lity/lity.min.js"></script>
+    <script src="plugins/jquery-marquee/jquery.marquee.min.js"></script>
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="plugins/select2/select2.full.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/moment.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/daterangepicker.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
