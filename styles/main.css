@@ -378,6 +378,82 @@ main { background: #F6F6F7; }
 
 .modal-dialog { min-height: calc(100% - (1.75rem * 2)); display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
+.modal-content { border-radius: 8px; }
+
+.modal .close { position: absolute; top: 24px; right: 14px; z-index: 9; opacity: 1; }
+
+.modal-settings { max-width: 920px; }
+
+.modal-settings .close { top: 12px; }
+
+.modal-settings .modal-content { height: calc(100vh - (1.75rem * 2)); }
+
+.modal-settings .modal-body { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0; border-radius: 8px; overflow: hidden; }
+
+.modal-settings .modal-asside { -webkit-flex: 0 0 224px; -ms-flex: 0 0 224px; flex: 0 0 224px; max-width: 224px; height: 100%; border-right: 1px solid #e5e5e5; background: #fff; padding: 20px 12px; }
+
+.modal-settings .modal-container { -webkit-flex: 0 0 calc(100% - 224px); -ms-flex: 0 0 calc(100% - 224px); flex: 0 0 calc(100% - 224px); max-width: calc(100% - 224px); height: 100%; background: #F6F6F6; position: relative; }
+
+.modal-settings .modal-container h4 { font-size: 14px; line-height: 1.3em; font-weight: 600; border-bottom: 1px solid #e5e5e5; padding: 16px; padding-left: 48px; margin-bottom: 0; background: #F6F6F6; }
+
+.modal-settings .modal-title { margin-bottom: 42px; text-align: center; }
+
+.modal-settings .modal-title h3 { font-size: 18px; line-height: 1.3em; font-weight: 600; }
+
+.modal-settings .settings-tab .nav-tabs { border-bottom: 0; }
+
+.modal-settings .settings-tab .nav-item { display: block; width: 100%; }
+
+.modal-settings .settings-tab .nav-item:not(:last-child) { margin-bottom: 4px; }
+
+.modal-settings .settings-tab .nav-link { display: block; border: none; padding: 12px; border-radius: 8px; font-size: 14px; line-height: 1.3em; color: #000000; }
+
+.modal-settings .settings-tab .nav-link:hover { color: #F23C13; }
+
+.modal-settings .settings-tab .nav-link.active { border: none; background: #F4D9D3; color: #F23C13; font-weight: 500; }
+
+.modal-settings .tab-content { height: calc(100% - 51px); padding: 24px 48px; overflow-y: auto; }
+
+.modal-settings .contact-list > ul li:not(:last-child) { margin-bottom: 15px; }
+
+.modal-settings .notfication-settings .settings-item { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.modal-settings .notfication-settings .settings-item:not(:last-child) { margin-bottom: 40px; }
+
+.modal-settings .notfication-settings .left b { font-size: 22px; line-height: 1.3em; font-weight: 600; color: #F23C13; display: block; margin-bottom: 14px; }
+
+.modal-settings .notfication-settings .left p { font-size: 14px; line-height: 1.3em; margin-bottom: 20px; }
+
+.modal-settings .notfication-settings .checks { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; min-width: 112px; }
+
+.modal-settings .notfication-settings .checks + .checks { margin-top: 8px; }
+
+.modal-settings .notfication-settings .checks .custom-control { display: inline-block; padding-left: 0; padding-bottom: 32px; }
+
+.modal-settings .notfication-settings .checks .custom-control-label { font-size: 14px; line-height: 1.3em; font-weight: 400; color: #000000; text-align: center; display: block; min-width: 38px; }
+
+.modal-settings .notfication-settings .checks .custom-control-label:before, .modal-settings .notfication-settings .checks .custom-control-label:after { left: calc(50% - 10px); top: calc(100% + 20px); }
+
+.modal-settings .notfication-settings .checks .custom-control-label:before { border: 2px solid #A8A8A8; }
+
+.modal-settings .notfication-settings .form-action { text-align: center; margin-top: 80px; }
+
+.modal-settings .edit-profile .eprofile { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 48px; }
+
+.modal-settings .edit-profile .eprofile__pp { width: 80px; height: 80px; border-radius: 50%; }
+
+.modal-settings .edit-profile .eprofile__pp img { width: 100%; height: 100%; }
+
+.modal-settings .edit-profile .eprofile__name { margin-left: 14px; }
+
+.modal-settings .edit-profile .eprofile__name b { font-size: 18px; line-height: 1.3em; font-weight: 600; }
+
+.modal-settings .edit-profile .eprofile__name .loginas { font-size: 14px; line-height: 1.3em; color: #A8A8A8; }
+
+.modal-settings .edit-profile .eprofile__name .loginas span { color: #000000; }
+
+.modal-settings .edit-profile .form-action { margin-top: 60px; }
+
 /* ------------------------------------------------------------------------------------------------ */
 /* Form */
 /* ------------------------------------------------------------------------------------------------ */
