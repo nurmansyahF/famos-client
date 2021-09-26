@@ -23,6 +23,14 @@
             <div class="col right">
               <div class="user-header">
                 <ul>
+                  <li class="head-search"><a href="#"><img src="images/ic-header-search.png"/></a>
+                    <div class="box_search">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Apa yang ingin Anda cari?"/>
+                      </div>
+                      <button class="btn btn-submit" type="submit"><img src="images/ic-header-search-white.png" alt="ic-search-white"/></button>
+                    </div>
+                  </li>
                   <li class="questionmark"><a href="#"><img src="images/ic-head-help.png"/></a></li>
                   <li class="notif"><a href="#"><img src="images/ic-head-notif.png"/></a>
                     <div class="header-notif__box">
@@ -85,18 +93,6 @@
                       </div>
                     </div>
                   </li>
-                  <li class="user-acnt"><a href="#"><img src="images/ic-head-account.png"/></a>
-                    <div class="user-acnt_menu">
-                      <ul>
-                        <li><a href="#userSettings" data-toggle="modal" data-target="#userSettings">
-                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Sunting Profil</span></a></li>
-                        <li><a href="#">
-                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Pengaturan Notifikasi</span></a></li>
-                        <li><a href="#">
-                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Log Out</span></a></li>
-                      </ul>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -108,24 +104,31 @@
         <nav class="sidemenu">
           <ul>
             <li><a href="home.html">
-                <div class="icon"><img src="images/ic-home.png"/><img class="hover" src="images/ic-home-hover.png"/></div><span>Home</span></a></li>
-            <li><a href="dashboard.html">
-                <div class="icon"><img src="images/ic-dashboard.png"/><img class="hover" src="images/ic-dashboard-hover.png"/></div><span>Dashboard</span></a></li>
+                <div class="icon"><img src="images/ic-home.png"/><img class="hover" src="images/ic-home-hover.png"/></div><span>Beranda</span></a></li>
+            <li><a href="proyek.html">
+                <div class="icon"><img src="images/ic-proyek.png"/><img class="hover" src="images/ic-proyek-hover.png"/></div><span>Proyek</span></a></li>
             <li class="current-menu-item"><a href="brief.html">
                 <div class="icon"><img src="images/ic-brief.png"/><img class="hover" src="images/ic-brief-hover.png"/></div><span>Brief</span></a></li>
             <li><a href="inbox.html">
-                <div class="icon"><img src="images/ic-inbox.png"/><img class="hover" src="images/ic-inbox-hover.png"/></div><span>Inbox
+                <div class="icon"><img src="images/ic-inbox.png"/><img class="hover" src="images/ic-inbox-hover.png"/></div><span>Pesan
                   <u class="count">3</u></span></a></li>
             <li><a href="pembayaran.html">
                 <div class="icon"><img src="images/ic-pembayaran.png"/><img class="hover" src="images/ic-pembayaran-hover.png"/></div><span>Pembayaran</span></a></li>
           </ul>
         </nav>
-        <div class="dontknow-box">
-          <div class="icon"><img src="images/ic-dontknow.png"/></div>
-          <h4>Belum tau cara menulis brief dengan mudah <br>& jelas?</h4><a href="#">Baca guide disini</a>
-        </div>
-        <div class="needhelp">
-          <div class="img"><img src="images/img-need-help.png"/></div><a href="#">Butuh bantuan ?</a>
+        <div class="need-help"><a href="#">Butuh bantuan ?</a></div>
+        <div class="user-account dropright" data-toggle="dropdown" aria-expanded="true"><a class="user-account__pp" href="#"><img src="images/user-photo.png"/></a>
+          <div class="user-account__name"><span>Anthony Winata</span></div>
+          <div class="dropdown-menu user-acnt_menu">
+            <ul>
+              <li><a href="#userSettings" data-toggle="modal" data-target="#userSettings">
+                  <div class="ic"><img src="images/ic-sunting.png"/></div><span>Sunting Profil</span></a></li>
+              <li><a href="#">
+                  <div class="ic"><img src="images/ic-pengaturan-notif.png"/></div><span>Pengaturan Notifikasi</span></a></li>
+              <li><a href="#">
+                  <div class="ic"><img src="images/ic-keluar.png"/></div><span>Log Out</span></a></li>
+            </ul>
+          </div>
         </div>
       </aside>
       <main>
@@ -159,40 +162,50 @@
             </div>
             <section class="brief">
               <div class="section_title">
-                <h3>Menunggu Konfirmasi</h3>
+                <h3>Brief Disetujui</h3>
               </div>
               <div class="row">
                 <div class="col-md-3">
-                  <div class="card-white yellow">
+                  <div class="card-white green">
                     <div class="top">
-                      <div class="icon"><img src="images/ic-brief-need-confirm.png"/></div>
+                      <div class="icon"><img src="images/ic-brief-untitled.png"/></div>
                       <div class="text">
-                        <h4 style="color: #FEE100">Untitled Project</h4>
-                        <p>Menunggu Talenta menerima penawaran anda.</p>
+                        <h4 style="color: #1cea6f">Untitled Project</h4>
+                        <p>Arya Wiyono telah menerima penawaran Anda. Segera lakukan pembayaran untuk melanjutkan proyek.</p>
                       </div>
+                      <div class="tag"><span style="background: #1CEA6F;">Yuk Bayar</span></div>
                     </div>
-                    <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
+                    <div class="bottom"><a class="btn btn-white" href="#">Bayar</a></div>
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="card-white yellow">
+                  <div class="card-white green">
                     <div class="top">
-                      <div class="icon"><img src="images/ic-brief-need-confirm.png"/></div>
+                      <div class="icon"><img src="images/ic-brief-untitled.png"/></div>
                       <div class="text">
-                        <h4 style="color: #FEE100">Untitled Project</h4>
-                        <p>Menunggu Talenta menerima penawaran anda.</p>
+                        <h4 style="color: #1cea6f">Untitled Project</h4>
+                        <p>Arya Wiyono telah menerima penawaran Anda. Segera lakukan pembayaran untuk melanjutkan proyek.</p>
                       </div>
+                      <div class="tag"><span style="background: #1CEA6F;">Yuk Bayar</span></div>
                     </div>
-                    <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
+                    <div class="bottom"><a class="btn btn-white" href="#">Bayar</a></div>
                   </div>
                 </div>
+              </div>
+            </section>
+            <section class="brief">
+              <div class="section_title">
+                <h3>Brief Tidak Disetujui</h3>
+              </div>
+              <div class="row">
                 <div class="col-md-3">
-                  <div class="card-white yellow">
+                  <div class="card-white red">
                     <div class="top">
-                      <div class="icon"><img src="images/ic-brief-need-confirm.png"/></div>
+                      <div class="icon"><img src="images/ic-brief-reject.png"/></div>
+                      <div class="tag"><span style="background: #F23C13;">Pilih Talenta</span></div>
                       <div class="text">
-                        <h4 style="color: #FEE100">Untitled Project</h4>
-                        <p>Menunggu Talenta menerima penawaran anda.</p>
+                        <h4 style="color: #F23C13">Untitled Project</h4>
+                        <p>Andre M. belum bisa menerima penawaran Anda. Silahkan pilih talenta lain disini</p>
                       </div>
                     </div>
                     <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
@@ -202,16 +215,28 @@
             </section>
             <section class="brief">
               <div class="section_title">
-                <h3>Lorem Ipsum</h3>
+                <h3>Menunggu Konfirmasi</h3>
               </div>
               <div class="row">
                 <div class="col-md-3">
-                  <div class="card-white red">
+                  <div class="card-white yellow">
                     <div class="top">
-                      <div class="icon"><img src="images/ic-brief-wait.png"/></div>
+                      <div class="icon"><img src="images/ic-brief-need-confirm.png"/></div>
                       <div class="text">
-                        <h4 style="color: #F23C13">Untitled Project</h4>
-                        <p>Menunggu Talenta menerima penawaran anda.</p>
+                        <h4 style="color: #FDCB00">Untitled Project</h4>
+                        <p>Menunggu Azka Senja menerima penawaran Anda.</p>
+                      </div>
+                    </div>
+                    <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card-white yellow">
+                    <div class="top">
+                      <div class="icon"><img src="images/ic-brief-need-confirm.png"/></div>
+                      <div class="text">
+                        <h4 style="color: #FDCB00">Untitled Project</h4>
+                        <p>Menunggu Azka Senja menerima penawaran Anda.</p>
                       </div>
                     </div>
                     <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
@@ -230,7 +255,7 @@
                       <div class="icon"><img src="images/ic-brief-notfinish.png"/></div>
                       <div class="text">
                         <h4>Untitled Project</h4>
-                        <p>Selesaikan 3 dari 7 langkah</p>
+                        <p>Selesaikan brief Anda 2 dari 3 langkah.</p>
                       </div>
                     </div>
                     <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
@@ -242,7 +267,7 @@
                       <div class="icon"><img src="images/ic-brief-notfinish.png"/></div>
                       <div class="text">
                         <h4>Untitled Project</h4>
-                        <p>Selesaikan 3 dari 7 langkah</p>
+                        <p>Selesaikan brief Anda 2 dari 3 langkah.</p>
                       </div>
                     </div>
                     <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
@@ -254,7 +279,7 @@
                       <div class="icon"><img src="images/ic-brief-notfinish.png"/></div>
                       <div class="text">
                         <h4>Untitled Project</h4>
-                        <p>Selesaikan 3 dari 7 langkah</p>
+                        <p>Selesaikan brief Anda 2 dari 3 langkah.</p>
                       </div>
                     </div>
                     <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
@@ -266,7 +291,7 @@
                       <div class="icon"><img src="images/ic-brief-notfinish.png"/></div>
                       <div class="text">
                         <h4>Untitled Project</h4>
-                        <p>Selesaikan 3 dari 7 langkah</p>
+                        <p>Selesaikan brief Anda 2 dari 3 langkah.</p>
                       </div>
                     </div>
                     <div class="bottom"><a class="btn btn-white" href="#">Tampilkan</a></div>
@@ -292,7 +317,6 @@
     <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
     <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
     <script src="plugins/lity/lity.min.js"></script>
-    <script src="plugins/jquery-marquee/jquery.marquee.min.js"></script>
     <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="plugins/select2/select2.full.min.js"></script>
     <script src="plugins/bootstrap-datepicker/moment.min.js"></script>

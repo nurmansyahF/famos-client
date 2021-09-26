@@ -23,6 +23,14 @@
             <div class="col right">
               <div class="user-header">
                 <ul>
+                  <li class="head-search"><a href="#"><img src="images/ic-header-search.png"/></a>
+                    <div class="box_search">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Apa yang ingin Anda cari?"/>
+                      </div>
+                      <button class="btn btn-submit" type="submit"><img src="images/ic-header-search-white.png" alt="ic-search-white"/></button>
+                    </div>
+                  </li>
                   <li class="questionmark"><a href="#"><img src="images/ic-head-help.png"/></a></li>
                   <li class="notif"><a href="#"><img src="images/ic-head-notif.png"/></a>
                     <div class="header-notif__box">
@@ -85,18 +93,6 @@
                       </div>
                     </div>
                   </li>
-                  <li class="user-acnt"><a href="#"><img src="images/ic-head-account.png"/></a>
-                    <div class="user-acnt_menu">
-                      <ul>
-                        <li><a href="#userSettings" data-toggle="modal" data-target="#userSettings">
-                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Sunting Profil</span></a></li>
-                        <li><a href="#">
-                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Pengaturan Notifikasi</span></a></li>
-                        <li><a href="#">
-                            <div class="ic"><img src="images/dummy-square.png"/></div><span>Log Out</span></a></li>
-                      </ul>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -108,24 +104,31 @@
         <nav class="sidemenu">
           <ul>
             <li><a href="home.html">
-                <div class="icon"><img src="images/ic-home.png"/><img class="hover" src="images/ic-home-hover.png"/></div><span>Home</span></a></li>
-            <li class="current-menu-item"><a href="dashboard.html">
-                <div class="icon"><img src="images/ic-dashboard.png"/><img class="hover" src="images/ic-dashboard-hover.png"/></div><span>Dashboard</span></a></li>
+                <div class="icon"><img src="images/ic-home.png"/><img class="hover" src="images/ic-home-hover.png"/></div><span>Beranda</span></a></li>
+            <li><a href="proyek.html">
+                <div class="icon"><img src="images/ic-proyek.png"/><img class="hover" src="images/ic-proyek-hover.png"/></div><span>Proyek</span></a></li>
             <li><a href="brief.html">
                 <div class="icon"><img src="images/ic-brief.png"/><img class="hover" src="images/ic-brief-hover.png"/></div><span>Brief</span></a></li>
             <li><a href="inbox.html">
-                <div class="icon"><img src="images/ic-inbox.png"/><img class="hover" src="images/ic-inbox-hover.png"/></div><span>Inbox
+                <div class="icon"><img src="images/ic-inbox.png"/><img class="hover" src="images/ic-inbox-hover.png"/></div><span>Pesan
                   <u class="count">3</u></span></a></li>
             <li><a href="pembayaran.html">
                 <div class="icon"><img src="images/ic-pembayaran.png"/><img class="hover" src="images/ic-pembayaran-hover.png"/></div><span>Pembayaran</span></a></li>
           </ul>
         </nav>
-        <div class="dontknow-box">
-          <div class="icon"><img src="images/ic-dontknow.png"/></div>
-          <h4>Belum tau cara menulis brief dengan mudah <br>& jelas?</h4><a href="#">Baca guide disini</a>
-        </div>
-        <div class="needhelp">
-          <div class="img"><img src="images/img-need-help.png"/></div><a href="#">Butuh bantuan ?</a>
+        <div class="need-help"><a href="#">Butuh bantuan ?</a></div>
+        <div class="user-account dropright" data-toggle="dropdown" aria-expanded="true"><a class="user-account__pp" href="#"><img src="images/user-photo.png"/></a>
+          <div class="user-account__name"><span>Anthony Winata</span></div>
+          <div class="dropdown-menu user-acnt_menu">
+            <ul>
+              <li><a href="#userSettings" data-toggle="modal" data-target="#userSettings">
+                  <div class="ic"><img src="images/ic-sunting.png"/></div><span>Sunting Profil</span></a></li>
+              <li><a href="#">
+                  <div class="ic"><img src="images/ic-pengaturan-notif.png"/></div><span>Pengaturan Notifikasi</span></a></li>
+              <li><a href="#">
+                  <div class="ic"><img src="images/ic-keluar.png"/></div><span>Log Out</span></a></li>
+            </ul>
+          </div>
         </div>
       </aside>
       <main>
@@ -311,7 +314,6 @@
     <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
     <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
     <script src="plugins/lity/lity.min.js"></script>
-    <script src="plugins/jquery-marquee/jquery.marquee.min.js"></script>
     <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="plugins/select2/select2.full.min.js"></script>
     <script src="plugins/bootstrap-datepicker/moment.min.js"></script>
