@@ -111,7 +111,7 @@
                 <li class="active">
                   <u>1</u><span>Key Details</span>
                 </li>
-                <li class="active">
+                <li>
                   <u>2</u><span>Brief</span>
                 </li>
                 <li>
@@ -120,69 +120,99 @@
               </ul>
             </div>
             <div class="form">
-              <form class="valthis" action="brief-write-step3.html">
-                <div class="form-group">
-                  <label class="inline">Brief untuk :</label>
-                  <select class="select select-inline noborder" title="Pilih Brief">
-                    <option>Branding</option>
-                    <option>Graphic Design</option>
-                  </select>
-                </div>
-                <hr class="divider"/>
-                <div class="form-group">
-                  <label>Ringkasan Penjelasan (Brief Summary) <i>*</i></label><small>Mulailah dengan 1 atau 2 kalimat yang mendeskripsikan keseluruhan ringkasan proyek secara singkat.</small>
-                  <textarea class="form-control" name="ringkasan" placeholder="Tulis jawaban anda disini ..." rows="8" maxlength="100" required="required"></textarea>
-                  <div class="counter"><span class="cntr"></span><span class="max"></span></div>
-                  <div class="err-msg"></div>
-                </div>
-                <hr class="divider"/>
-                <div class="form-group">
-                  <label>Penjelasan Lengkap (The Full Brief) <i>*</i></label><small>Beri tahu kami apa yang Anda butuhkan! Penjelasan detail lebih membantu kami. Pastikan untuk memasukkan informasi seperti: tujuan proyek desain, apa yang harus dimasukkan dalam proses kreatif, persyaratan khusus dalam pembuatan proyek desain, kendala/permasalahan yang ingin diselesaikan dengan proyek desain ini dll.</small>
-                  <textarea class="form-control" name="penjelasan" placeholder="Tulis jawaban anda disini ..." rows="8" maxlength="1000" required="required"></textarea>
-                  <div class="counter"><span class="cntr"></span><span class="max"></span></div>
-                  <div class="err-msg"></div>
-                </div>
-                <hr class="divider"/>
-                <div class="form-group">
-                  <label>Target Audience <i>*</i></label><small>Jelaskan secara ringan tentang konsumen Anda. Sertakan motivasi, prioritas dan keinginan mereka (konsumen insight); serta apa yang Anda ingin mereka pikirkan, rasakan, dan lakukan.</small>
-                  <textarea class="form-control" name="target_audience" placeholder="Tulis jawaban anda disini ..." rows="8" required="required"></textarea>
-                  <div class="counter"><span class="cntr"></span><span class="max"></span></div>
-                  <div class="err-msg"></div>
-                </div>
-                <hr class="divider"/>
-                <div class="form-group">
-                  <label>Arahan Kreatif (Creative Direction) <i>*</i></label><small>Jelaskan mood, gaya, dan ide kreatif apa pun yang Anda inginkan untuk proyek desain Anda. Berikan referensi visual apa pun untuk membantu menggambarkan visi Anda. Anda dapat membuat detail keinginan sesuka Anda atau menyerahkan sepenuhnya kepada talent kreatif untuk datang dengan ide kreatif mereka sendiri.</small>
-                  <textarea class="form-control" name="arahan_kreatif" placeholder="Tulis jawaban anda disini ..." rows="8" required="required"></textarea>
-                  <div class="counter"><span class="cntr"></span><span class="max"></span></div>
-                  <div class="err-msg"></div>
-                </div>
-                <hr class="divider"/>
-                <div class="form-group">
-                  <label>Files, examples and assets <i>*</i></label><small>Berikan aset kepada kami (Opsional) Tambahkan penjelasan singkat lalu lampirkan file / contoh di bawah ini (misalnya: logo, brand guidelines, color code, moodboard).</small>
-                  <input class="form-control" name="files" type="text" placeholder="Tulis jawaban anda disini …" required="required"/>
-                  <div class="uploadfile"><a class="btn btn-white btn-upload" data-toggle="modal" href="#upldFile">Tambahkan File</a></div>
-                  <div class="err-msg"></div>
-                </div>
-                <hr class="divider"/>
-                <div class="form-group">
-                  <label>Deliverables Output <i>*</i></label><small>Buat daftar semua Output Final Artworks yang diperlukan. Pastikan Anda mendeskripsikan masing-masing dengan jelas, termasuk panjang / ukuran / rasio / format, jenis file yang diperlukan, dll.</small>
-                  <textarea class="form-control" name="deliverables_output" placeholder="Tulis jawaban anda disini ..." rows="8" required="required"></textarea>
-                  <div class="counter"><span class="cntr"></span><span class="max"></span></div>
-                  <div class="err-msg"></div>
-                </div>
-                <hr class="divider"/>
-                <div class="form-group date">
-                  <label>Deliverables Due<i>*</i></label><small>Tanggal Anda memerlukan final artworks untuk digunakan</small>
-                  <div class="date-box">
-                    <input class="form-control" name="deliverables_due" type="text" placeholder="DD/MM/YY" required="required"/>
+              <form action="brief-write-step2.html">
+                <div class="form-group keahlian error">
+                  <div class="form-row">
+                    <div class="col select-keahlian">
+                      <label>Keahlian <i>*</i></label>
+                    </div>
+                    <div class="col select-subkeahlian label">
+                      <label>Sub Keahlian <i>*</i></label>
+                    </div>
                   </div>
+                  <div class="multiplier">
+                    <div class="form-row item">
+                      <div class="col select-keahlian">
+                        <select class="select" title="Pilih Keahlian" name="keahlian[0]">
+                          <option>Pilih</option>
+                          <option>Branding</option>
+                          <option>Branding</option>
+                          <option>Graphic Design</option>
+                          <option>Social Media Management</option>
+                          <option>Digital / Audio Visual</option>
+                          <option>Website / Apps</option>
+                          <option>Wayfinding System</option>
+                        </select>
+                      </div>
+                      <div class="col select-subkeahlian">
+                        <select class="select" title="Pilih Sub Keahlian" name="sub_subkeahlian[0]">
+                          <option>Pilih</option>
+                        </select>
+                      </div><a class="btn-del" href="#"><img src="images/ic-trash-can.png" alt="ic-del"/></a>
+                    </div><a class="btn btn--white btn-add" href="#">
+                      <div class="icon"><img src="images/ic-plus-btn-primary.png"/></div><span>Tambah Keahlian</span></a>
+                  </div>
+                  <div class="err-msg">
+                    <label class="error" for="tipe_proyek">Kolom ini wajib diisi</label>
+                  </div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group currency">
+                  <label>Total Budget (Rp)<i>*</i></label>
+                  <input class="form-control" type="number" name="total_budget" placeholder="" required="required"/><span class="crncy">Rp</span>
+                  <div class="err-msg"></div>
+                </div>
+                <div class="form-group currency">
+                  <label>Total Budget Desain Grafis (Rp) <i>*</i></label>
+                  <input class="form-control" type="number" name="total_budget" placeholder="" required="required"/><span class="crncy">Rp</span>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Nama Perusahaan <i>*</i></label><small>Jika Anda tidak diwakili oleh sebuah perusahaan, masukkan nama merek Anda.</small>
+                  <input class="form-control" type="text" name="nama_perusahaan" placeholder="Tulis Nama Perusahaan Anda disini …" required="required"/>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Bidang Perusahaan <i>*</i></label>
+                  <select class="select" title="Pilih Bidang Perusahaan" name="bidang_perusahaan" required="required">
+                    <option>Pilih</option>
+                    <option>Active/Sport</option>
+                    <option>Agriculture & Plantations</option>
+                    <option>Art & Design</option>
+                    <option>Beauty & Skincare</option>
+                    <option>Commerce</option>
+                    <option>Education & Trainings</option>
+                    <option>Entertainment & Media</option>
+                    <option>Fashion & Textiles</option>
+                    <option>Food & Beverages</option>
+                  </select>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Apakah perusahaan Anda terdaftar di Indonesia? <i>*</i></label><small>Entitas terdaftar di Indonesia akan mendapatkan PPN yang ditambahkan ke anggaran Anda</small>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="optradio1" type="radio" name="optradio"/>
+                    <label class="custom-control-label" for="optradio1">Ya</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="optradio2" type="radio" name="optradio"/>
+                    <label class="custom-control-label" for="optradio2">Tidak</label>
+                  </div>
+                  <div class="err-msg"></div>
+                </div>
+                <hr class="divider"/>
+                <div class="form-group">
+                  <label>Nama Merk <i>*</i></label><small>Ini akan digunakan sebagai judul proyek</small>
+                  <input class="form-control" type="text" name="nama_merk" placeholder="Tulis Nama Merk Anda disini …" required="required"/>
                   <div class="err-msg"></div>
                 </div>
                 <hr class="divider"/>
                 <div class="form-footer">
                   <p class="note">* Wajib diisi</p>
-                  <div class="group-button">
-                    <div class="left"><a class="btn btn-grey" href="brief-write.html">Kembali</a><a class="btn btn-primary disabled" href="#">Berikutnya</a></div>
+                  <div class="group-button"><a class="btn btn-primary disabled" href="#">Berikutnya</a>
                     <button class="btn btn-border primary" type="submit">Simpan</button>
                   </div>
                 </div>
@@ -200,44 +230,6 @@
           </div>
         </div>
       </footer>
-    </div>
-    <div class="modal" id="upldFile" tabindex="-1">
-      <div class="modal-dialog modal-dialog--centered modal-upload-file">
-        <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
-          <div class="modal-body">
-            <div class="modal-title">
-              <h3>Unggah Aset</h3>
-            </div>
-            <div class="box-upload-file uploadfile" for="upload_file">
-              <div class="box-plcholder">
-                <input class="inputfile" type="file" id="upload_file" title="" required="required"/>
-                <div class="icon"><img src="images/img-upload-file.png" alt="img-upload"/></div>
-                <div class="text">
-                  <p>Seret dan lepas untuk mengunggah <br> atau</p>
-                </div>
-                <label class="btn btn-primary btn-upld" for="upload_file">Cari File</label>
-              </div>
-            </div>
-            <div class="uploaded_list">
-              <div class="item_uploaded">
-                <div class="file-type">
-                  <div class="icon"><img src="images/icon-img.png" alt="ic-uploaded"/></div>
-                  <div class="filename">IMG_22344.jpg</div>
-                </div>
-                <div class="ic-check"><img src="images/ic-green-check.png" alt="ic-check"/></div>
-              </div>
-              <div class="item_uploaded">
-                <div class="file-type">
-                  <div class="icon"><img src="images/icon-pdf.png" alt="ic-uploaded"/></div>
-                  <div class="filename">Brandguideline.pdf</div>
-                </div>
-                <div class="ic-check"><img src="images/ic-green-check.png" alt="ic-check"/></div>
-              </div>
-              <div class="btn-wrap"><a class="btn btn-primary" href="#">Unggah</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <script src="plugins/jquery/jquery-3.4.1.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>

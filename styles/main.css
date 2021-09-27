@@ -352,7 +352,7 @@ main { background: #F6F6F7; }
 
 .btn-link-black:hover { color: #F23C13; }
 
-.btn-upload { border: 1px solid #ced4da; font-size: 16px; line-height: 1em; font-weight: 400; color: #F23C13 !important; margin-top: 28px; min-width: 255px; position: relative; text-align: left; }
+.btn-upload { border: 1px solid #ced4da; font-size: 16px; line-height: 1.7em; font-weight: 400; color: #F23C13 !important; margin-top: 28px; min-width: 255px; position: relative; text-align: left; }
 
 .btn-upload:after { content: ""; width: 18px; height: 18px; background-image: url("../images/ic-upload-file.png"); background-size: contain; background-repeat: no-repeat; background-position: center; position: absolute; top: 12px; right: 20px; }
 
@@ -391,6 +391,10 @@ main { background: #F6F6F7; }
 .accordion--klien > .card > .card-header:not(.collapsed) { color: #FFF; }
 
 .accordion--klien > .card .card-body { color: #FFF; }
+
+.select.select-inline { display: inline-block; box-shadow: none !important; width: auto !important; }
+
+.select.select-inline .btn.dropdown-toggle { height: auto !important; padding: 0; padding-left: 10px; border: 0 !important; background: transparent !important; color: #000000; font-size: 18px !important; line-height: 1.3em !important; }
 
 .modal-dialog { min-height: calc(100% - (1.75rem * 2)); display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
@@ -519,9 +523,11 @@ textarea.form-control { padding: 16px 21px; }
 
 .date { position: relative; }
 
-.date .date-box { position: relative; display: inline-block; }
+.date .date-box { min-width: 350px; position: relative; display: inline-block; }
 
 .date .date-box:after { content: ""; width: 17px; height: 17px; position: absolute; right: 20px; top: 15px; background-image: url("../images/ic-date.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+
+.date .date-box .form-cotrol { width: 100%; }
 
 .uploadfile .inputfile { opacity: 0; visibility: hidden; width: 0; height: 0; }
 
@@ -1268,7 +1274,7 @@ hr.line { margin: 0 38px; }
 
 .write-brief .keahlian .multiplier.multiplied .select-subkeahlian.label label { display: block; }
 
-.write-brief-confirm { text-align: center; }
+.write-brief-confirm { text-align: center; width: 100%; min-height: 80vh; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-left: auto; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin: 0 auto; }
 
 .write-brief-confirm .brief-confirm__img { margin: 0 auto 55px; max-height: 300px; }
 
@@ -1281,6 +1287,8 @@ hr.line { margin: 0 38px; }
 .write-brief-confirm .brief-confirm__text p { font-size: 18px; line-height: 1.5em; }
 
 .write-brief-confirm .brief-confirm__text p span { color: #F23C13; }
+
+.footer-staticpage { padding-top: 0; }
 
 .modal-brief-cancelConfirm .modal-content { position: relative; }
 
@@ -1336,7 +1344,7 @@ hr.line { margin: 0 38px; }
 
 .modal-add-rincian-contact .modal-title h3 { font-size: 18px; line-height: 1.5em; font-weight: 500; margin-bottom: 0; }
 
-.modal-add-rincian-contact .modal-body { padding: 80px 0; max-width: 352px; margin: 0 auto; }
+.modal-add-rincian-contact .modal-body { width: 100%; padding: 80px 100px; margin: 0 auto; }
 
 .modal-add-rincian-contact .modal-body .form-control, .modal-add-rincian-contact .modal-body .dropdown.bootstrap-select .btn.dropdown-toggle { height: 42px; }
 
@@ -1373,6 +1381,48 @@ hr.line { margin: 0 38px; }
 .annoNotif .anno-inner .anno-btn-container .anno-btn:hover { color: #FFF; background-color: #F23C13; border-color: #F23C13; }
 
 .annoNotif .anno-inner .anno-btn-container .anno-btn:focus { outline: none !important; }
+
+.modal-upload-file { max-width: 445px; }
+
+.modal-upload-file .close { top: 30px; }
+
+.modal-upload-file .modal-title { margin-bottom: 30px; }
+
+.modal-upload-file .modal-title h3 { font-size: 16px; line-height: 1.5em; margin-bottom: 0; }
+
+.modal-upload-file .modal-body { padding: 30px; }
+
+.modal-upload-file .box-upload-file { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; border: 1px dashed #F23C13; border-radius: 8px; padding: 40px; position: relative; }
+
+.modal-upload-file .box-upload-file .inputfile { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; visibility: visible; }
+
+.modal-upload-file .box-upload-file .box-plcholder { max-width: 256px; margin: auto; text-align: center; color: #F23C13; }
+
+.modal-upload-file .box-upload-file .box-plcholder .icon { width: 65px; height: 65px; margin: 0 auto; margin-bottom: 16px; }
+
+.modal-upload-file .box-upload-file .box-plcholder .icon img { width: 100%; height: 100%; }
+
+.modal-upload-file .box-upload-file .box-plcholder .text { margin-bottom: 10px; }
+
+.modal-upload-file .box-upload-file .box-plcholder p { font-size: 14px; line-height: 1.5em; }
+
+.modal-upload-file .box-upload-file .box-plcholder .btn-upld { height: auto; padding: 8px 25px; font-size: 12px; line-height: 1.3em; font-weight: 400; }
+
+.modal-upload-file .uploaded_list { margin-top: 20px; }
+
+.modal-upload-file .uploaded_list .item_uploaded { padding: 10px 25px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; border: 1px solid #e5e5e5; border-radius: 8px; }
+
+.modal-upload-file .uploaded_list .item_uploaded:not(:last-child) { margin-bottom: 10px; }
+
+.modal-upload-file .uploaded_list .item_uploaded .filename, .modal-upload-file .uploaded_list .item_uploaded .icon { display: inline-block; vertical-align: middle; }
+
+.modal-upload-file .uploaded_list .item_uploaded .icon { width: 30px; height: 30px; margin-right: 8spx; }
+
+.modal-upload-file .uploaded_list .item_uploaded .icon img { width: 100%; height: 100%; }
+
+.modal-upload-file .uploaded_list .item_uploaded .filename { font-size: 12px; line-height: 1.3em; }
+
+.modal-upload-file .uploaded_list .btn-wrap { margin-top: 23px; text-align: center; }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* Responsive */
