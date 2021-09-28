@@ -117,7 +117,7 @@
           </ul>
         </nav>
         <div class="need-help"><a href="#">Butuh bantuan ?</a></div>
-        <div class="user-account dropright" data-toggle="dropdown" aria-expanded="true"><a class="user-account__pp" href="#"><img src="images/user-photo.png"/></a>
+        <div class="user-account dropright" aria-expanded="true"><a class="user-account__pp" href="#"><img src="images/user-photo.png"/></a>
           <div class="user-account__name"><span>Anthony Winata</span></div>
           <div class="dropdown-menu user-acnt_menu">
             <ul>
@@ -328,9 +328,17 @@
                                     <div class="timeline__date"><b>3 <br>Mei</b></div>
                                     <div class="timeline__box"><b>Preview 1</b>
                                       <p>1 File disematkan oleh Arya Wiyono</p>
+                                      <div class="btn-wrap"><a class="btn btn-primary btn-small" href="#ulasProyek" data-toggle="modal" data-target="#ulasProyek">Ulas</a><span>4 Komentar</span></div>
                                     </div>
                                   </div>
                                   <div class="timeline__item">
+                                    <div class="timeline__date"><b>4 <br>Mei</b></div>
+                                    <div class="timeline__box"><b>Preview 2</b>
+                                      <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                                      <div class="btn-wrap"><a class="btn btn-primary btn-small" href="#ulasProyek" data-toggle="modal" data-target="#ulasProyek">Ulas</a><span>4 Komentar</span></div>
+                                    </div>
+                                  </div>
+                                  <div class="timeline__item inactive">
                                     <div class="timeline__date"><b>5 <br>Mei</b></div>
                                     <div class="timeline__box"><b>Preview 2</b>
                                       <p>Lorem ipsum dolor sit amet, consectetuer</p>
@@ -454,6 +462,162 @@
           </div>
         </div>
       </footer>
+      <div class="modal" id="ulasProyek" tabindex="-1">
+        <div class="modal-dialog modal-dialog--centered modal-ulas-proyek">
+          <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
+            <div class="modal-body">
+              <div class="modal-title">
+                <h3>Judul Proyek</h3>
+                <h4>Preview 1</h4>
+              </div>
+              <div class="ulas-proyek">
+                <div class="box-file">
+                  <label>File disematkan</label>
+                  <div class="box-file__item">
+                    <div class="top">
+                      <div class="icon"><img src="images/ic-proyek-03.png" alt="icon-img"/></div>
+                      <div class="title"><a href="#">Preview1_JudulProyek …</a>
+                        <div class="size">12 MB</div>
+                        <div class="progress-bar">
+                          <div class="pb">
+                            <div class="pb-block"><span style="width: 30%"></span></div>
+                            <div class="prcntg">30%</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dwnld-file"><img src="images/ic-arrow-download.png" alt="ic-download"/></div>
+                    </div>
+                    <div class="bottom">
+                      <div class="row">
+                        <div class="col-4"><span>oleh</span><b>Arya Wiyono</b></div>
+                        <div class="col-4"><span>3 Mei 2021, 17.00</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-komentar">
+                  <label>Komentar</label>
+                  <div class="list-komentar">
+                    <div class="list-komentar__item">
+                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                      <div class="text">
+                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                        <div class="text-komen">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-komentar__item">
+                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                      <div class="text">
+                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                        <div class="text-komen">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-komentar__item">
+                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                      <div class="text">
+                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                        <div class="text-komen">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-form">
+                  <div class="box-inpt">
+                    <textarea class="form-control" row="8" placeholder="Tulis komentar anda disini"></textarea>
+                  </div>
+                  <div class="btn-wrap text-right">
+                    <button class="btn btn-primary btn-small" type="submit">Kirim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="ulasProyek" tabindex="-1">
+      <div class="modal-dialog modal-dialog--centered modal-ulas-proyek">
+        <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
+          <div class="modal-body">
+            <div class="modal-title">
+              <h3>Judul Proyek</h3>
+              <h4>Preview 1</h4>
+            </div>
+            <div class="ulas-proyek">
+              <div class="box-file">
+                <label>File disematkan</label>
+                <div class="box-file__item">
+                  <div class="top">
+                    <div class="icon"><img src="images/ic-proyek-03.png" alt="icon-img"/></div>
+                    <div class="title"><a href="#">Preview1_JudulProyek …</a>
+                      <div class="size">12 MB</div>
+                      <div class="progress-bar">
+                        <div class="pb">
+                          <div class="pb-block"><span style="width: 30%"></span></div>
+                          <div class="prcntg">30%</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dwnld-file"><img src="images/ic-arrow-download.png" alt="ic-download"/></div>
+                  </div>
+                  <div class="bottom">
+                    <div class="row">
+                      <div class="col-4"><span>oleh</span><b>Arya Wiyono</b></div>
+                      <div class="col-4"><span>3 Mei 2021, 17.00</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-komentar">
+                <label>Komentar</label>
+                <div class="list-komentar">
+                  <div class="list-komentar__item">
+                    <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                    <div class="text">
+                      <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                      <div class="text-komen">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-komentar__item">
+                    <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                    <div class="text">
+                      <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                      <div class="text-komen">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-komentar__item">
+                    <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                    <div class="text">
+                      <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                      <div class="text-komen">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-form">
+                <div class="box-inpt">
+                  <textarea class="form-control" row="8" placeholder="Tulis komentar anda disini"></textarea>
+                </div>
+                <div class="btn-wrap text-right">
+                  <button class="btn btn-primary btn-small" type="submit">Kirim</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="plugins/jquery/jquery-3.4.1.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>

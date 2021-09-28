@@ -117,7 +117,7 @@
           </ul>
         </nav>
         <div class="need-help"><a href="#">Butuh bantuan ?</a></div>
-        <div class="user-account dropright" data-toggle="dropdown" aria-expanded="true"><a class="user-account__pp" href="#"><img src="images/user-photo.png"/></a>
+        <div class="user-account dropright" aria-expanded="true"><a class="user-account__pp" href="#"><img src="images/user-photo.png"/></a>
           <div class="user-account__name"><span>Anthony Winata</span></div>
           <div class="dropdown-menu user-acnt_menu">
             <ul>
@@ -311,6 +311,251 @@
           </div>
         </div>
       </footer>
+      <div class="modal" id="userSettings" tabindex="-1">
+        <div class="modal-dialog modal-dialog--centered modal-settings">
+          <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
+            <div class="modal-body">
+              <div class="modal-asside">
+                <div class="modal-title">
+                  <h3>Pengaturan</h3>
+                </div>
+                <div class="settings-tab">
+                  <ul class="nav nav-tabs" id="settingsTab" role="tablist">
+                    <li class="nav-item nav-tab__item" role="presentation"><a class="nav-tab__link nav-link active" id="sunting-tab" data-toggle="tab" href="#sunting" role="tab" aria-controls="sunting" aria-selected="true">Sunting Profile</a></li>
+                    <li class="nav-item nav-tab__item" role="presentation"><a class="nav-tab__link nav-link" id="notifikasi-tab" data-toggle="tab" href="#notifikasi" role="tab" aria-controls="notifikasi" aria-selected="true">Pengaturan Notifikasi</a></li>
+                    <li class="nav-item nav-tab__item" role="presentation"><a class="nav-tab__link nav-link" id="kontak-tab" data-toggle="tab" href="#kontak" role="tab" aria-controls="kontak" aria-selected="true">Rincian Kontak</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-container">
+                <h4 id="tab_title">Sunting Profile</h4>
+                <div class="tab-content" id="settingsTabContent">
+                  <div class="tab-pane fade show active" id="sunting" role="tabpanel" aria-labelledby="sunting-tab">
+                    <div class="edit-profile">
+                      <form>
+                        <div class="eprofile">
+                          <div class="eprofile__pp"><img src="images/ic-head-account.png"/></div>
+                          <div class="eprofile__name"><b>Anthony Winata</b>
+                            <div class="loginas">Anda Login Sebagai <span>Klien</span></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Nama Depan</label>
+                              <input class="form-control" type="text" placeholder="Nama Depan"/>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Nama Belakang</label>
+                              <input class="form-control" type="text" placeholder="Nama Belakang"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Username</label>
+                              <input class="form-control" type="text" placeholder="Username"/>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Email</label>
+                              <input class="form-control" type="text" placeholder="Email"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Password</label>
+                              <input class="form-control" type="password" placeholder="Password"/>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Ulangi Password</label>
+                              <input class="form-control" type="password" placeholder="Ulangi Password"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>No Hp</label>
+                              <input class="form-control" type="text" placeholder="No Hp"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Tipe Akun Anda</label>
+                              <select class="select">
+                                <option selected="selected">Klien</option>
+                                <option>Klien 1</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-action text-center">
+                          <button class="btn btn-primary" type="submit">Simpan Perubahan</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="notifikasi" role="tabpanel" aria-labelledby="notifikasi-tab">
+                    <div class="notfication-settings">
+                      <div class="settings-item">
+                        <div class="left"><b>Pesan</b>
+                          <p>Beritahu saya jika ada pesan baru</p>
+                        </div>
+                        <div class="right">
+                          <div class="checks">
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotife" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotife">Email</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotifs" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotifs">SMS</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="settings-item">
+                        <div class="left"><b>Proyek</b>
+                          <p>Beritahu saya jika match dengan Talenta baru</p>
+                          <p>Beritahu saya jika decline dengan Talenta baru</p>
+                          <p>Beritahu saya jika ada update progres</p>
+                        </div>
+                        <div class="right">
+                          <div class="checks">
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotife" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotife">Email</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotifs" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotifs">SMS</label>
+                            </div>
+                          </div>
+                          <div class="checks">
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotife" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotife"></label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotifs" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotifs"></label>
+                            </div>
+                          </div>
+                          <div class="checks">
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotife" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotife"></label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotifs" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotifs"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="settings-item">
+                        <div class="left"><b>Pembayaran</b>
+                          <p>Beritahu saya status pembayaran</p>
+                          <p>Ingatkan saya tagihan pembayaran</p>
+                        </div>
+                        <div class="right">
+                          <div class="checks">
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotife" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotife">Email</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotifs" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotifs">SMS</label>
+                            </div>
+                          </div>
+                          <div class="checks">
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotife" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotife"></label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" id="slctNotifs" type="checkbox" name="slct-notif"/>
+                              <label class="custom-control-label" for="slctNotifs"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-action"><a class="btn btn-primary" href="#">Simpan Perubahan</a></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="kontak" role="tabpanel" aria-labelledby="kontak-tab">
+                    <div class="contact-list"><a class="btn btn-primary" href="#addContact" data-toggle="modal" data-target="#addContact">Buat Kontak Baru</a>
+                      <ul>
+                        <li class="selected">
+                          <div class="card-contact">
+                            <div class="card-contact__name"><span>Anthony
+                                <u class="tag">Utama</u></span><span class="slctd">Dipilih</span></div>
+                            <div class="card-contact__detail">
+                              <ul>
+                                <li>Jabatan : Management Level</li>
+                                <li>+6285100411301</li>
+                              </ul>
+                            </div>
+                            <div class="card-contact__action">
+                              <div class="left"><a class="btn-link" href="#">Ubah</a></div>
+                              <div class="right"><a class="btn-delete" href="#">
+                                  <div class="ic"><img src="images/ic-delete.png"/></div></a></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="card-contact">
+                            <div class="card-contact__name">Louiz Hutapea</div>
+                            <div class="card-contact__detail">
+                              <ul>
+                                <li>Jabatan : Staff / Employee</li>
+                                <li>+6285100411301</li>
+                              </ul>
+                            </div>
+                            <div class="card-contact__action">
+                              <div class="left"><a class="btn-link" href="#">Ubah</a><a class="btn-link" href="#">Atur Sebagai Utama</a></div>
+                              <div class="right"><a class="btn-delete" href="#">
+                                  <div class="ic"><img src="images/ic-delete.png"/></div></a></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="card-contact">
+                            <div class="card-contact__name">Lucas Manulang</div>
+                            <div class="card-contact__detail">
+                              <ul>
+                                <li>Jabatan : Staff / Employee</li>
+                                <li>+6285100411301</li>
+                              </ul>
+                            </div>
+                            <div class="card-contact__action">
+                              <div class="left"><a class="btn-link" href="#">Ubah</a><a class="btn-link" href="#">Atur Sebagai Utama</a></div>
+                              <div class="right"><a class="btn-delete" href="#">
+                                  <div class="ic"><img src="images/ic-delete.png"/></div></a></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="plugins/jquery/jquery-3.4.1.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>

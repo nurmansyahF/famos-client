@@ -191,6 +191,48 @@
           </div>
         </div>
       </footer>
+      <div class="modal" id="addContact" tabindex="-1">
+        <div class="modal-dialog modal-dialog--centered modal-add-rincian-contact">
+          <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
+            <div class="modal-body">
+              <div class="modal-title">
+                <h3>Buat Rincian Kontak Baru</h3>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label>Nama Pengirim</label>
+                  <input class="form-control" type="text" placeholder="Tulis jawaban anda disini …"/>
+                </div>
+                <div class="form-group">
+                  <label>Jabatan/Posisi Pekerjaan</label>
+                  <select class="select" title="Pilih">
+                    <option>C- Level</option>
+                    <option>Management Level</option>
+                    <option>Staff / Employee</option>
+                    <option>SME’s Bussines Owner</option>
+                    <option>Others</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Nomer Telepon/Whatsapp</label>
+                  <input class="form-control" type="text" placeholder="Tulis jawaban anda disini …"/>
+                </div>
+                <div class="form-action"><a class="btn btn-white" data-dismiss="modal" data-toggle="modal" href="#addContactNotif">Simpan</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="addContactNotif" tabindex="-1">
+        <div class="modal-dialog modal-dialog--centered modal-addcontact-notif">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Simpan Perubahan terakhir anda?</p>
+              <div class="form-action"><a class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#">Simpan</a><a class="btn btn-border primary" href="#" data-dismiss="modal">Batal</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="modal" id="addContact" tabindex="-1">
       <div class="modal-dialog modal-dialog--centered modal-add-rincian-contact">
