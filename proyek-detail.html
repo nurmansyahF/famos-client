@@ -495,47 +495,64 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-komentar">
-                  <label>Komentar</label>
-                  <div class="list-komentar">
-                    <div class="list-komentar__item">
-                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
-                      <div class="text">
-                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
-                        <div class="text-komen">
-                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                <div class="action-btn"><a class="btn btn-primary btn-medium confirm-tnggapan" href="#ConfirmNotif" data-toggle="modal" data-target="#ConfirmNotif">Setujui Hasil</a><a class="btn btn-border btn-medium primary revise-tnggapan">Perlu Revisi</a></div>
+                <div class="komentar-wrap">
+                  <div class="box-komentar">
+                    <label>Komentar</label>
+                    <div class="list-komentar">
+                      <div class="list-komentar__item">
+                        <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                        <div class="text">
+                          <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                          <div class="text-komen">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="list-komentar__item">
-                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
-                      <div class="text">
-                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
-                        <div class="text-komen">
-                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                      <div class="list-komentar__item">
+                        <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                        <div class="text">
+                          <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                          <div class="text-komen">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="list-komentar__item">
-                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
-                      <div class="text">
-                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
-                        <div class="text-komen">
-                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                      <div class="list-komentar__item">
+                        <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                        <div class="text">
+                          <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                          <div class="text-komen">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="box-form">
-                  <div class="box-inpt">
-                    <textarea class="form-control" row="8" placeholder="Tulis komentar anda disini"></textarea>
-                  </div>
-                  <div class="btn-wrap text-right">
-                    <button class="btn btn-primary btn-small" type="submit">Kirim</button>
+                  <div class="box-form">
+                    <div class="box-inpt">
+                      <textarea class="form-control" row="1" placeholder="Tulis komentar anda disini"></textarea>
+                    </div>
+                    <div class="btn-wrap text-right">
+                      <button class="btn btn-primary btn-small" type="submit">Kirim</button>
+                    </div>
+                    <div class="action-btn">
+                      <p>Anda tidak bisa mengirim tanggapan, kolom<br> tanggapan sudah ditutup</p><a class="btn btn-primary btn-medium cls-tnggapan" href="#">Tutup Tanggapan</a>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="ConfirmNotif" tabindex="-1">
+        <div class="modal-dialog modal-dialog--centered modal-confirm-notif">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h3>Apakah anda yakin menyetujui hasil<br> proyek yang ditampilkan?</h3>
+              <p>Jika anda menyetujui maka proyek akan selesai</p>
+              <div class="form-action"><a class="btn btn-primary btn-medium" data-dismiss="modal" data-toggle="modal" href="#">Setuju</a><a class="btn btn-border primary btn-medium" href="#" data-dismiss="modal">Batal</a></div>
             </div>
           </div>
         </div>
@@ -574,47 +591,64 @@
                   </div>
                 </div>
               </div>
-              <div class="box-komentar">
-                <label>Komentar</label>
-                <div class="list-komentar">
-                  <div class="list-komentar__item">
-                    <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
-                    <div class="text">
-                      <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
-                      <div class="text-komen">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+              <div class="action-btn"><a class="btn btn-primary btn-medium confirm-tnggapan" href="#ConfirmNotif" data-toggle="modal" data-target="#ConfirmNotif">Setujui Hasil</a><a class="btn btn-border btn-medium primary revise-tnggapan">Perlu Revisi</a></div>
+              <div class="komentar-wrap">
+                <div class="box-komentar">
+                  <label>Komentar</label>
+                  <div class="list-komentar">
+                    <div class="list-komentar__item">
+                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                      <div class="text">
+                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                        <div class="text-komen">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="list-komentar__item">
-                    <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
-                    <div class="text">
-                      <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
-                      <div class="text-komen">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                    <div class="list-komentar__item">
+                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                      <div class="text">
+                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                        <div class="text-komen">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="list-komentar__item">
-                    <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
-                    <div class="text">
-                      <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
-                      <div class="text-komen">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="list-komentar__item">
+                      <div class="photo"><img src="images/ic-head-account.png" alt="photo"/></div>
+                      <div class="text">
+                        <div class="name"><b>Arya Wiyono</b></div><span class="date">3 hari yang lalu</span>
+                        <div class="text-komen">
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="box-form">
-                <div class="box-inpt">
-                  <textarea class="form-control" row="8" placeholder="Tulis komentar anda disini"></textarea>
-                </div>
-                <div class="btn-wrap text-right">
-                  <button class="btn btn-primary btn-small" type="submit">Kirim</button>
+                <div class="box-form">
+                  <div class="box-inpt">
+                    <textarea class="form-control" row="1" placeholder="Tulis komentar anda disini"></textarea>
+                  </div>
+                  <div class="btn-wrap text-right">
+                    <button class="btn btn-primary btn-small" type="submit">Kirim</button>
+                  </div>
+                  <div class="action-btn">
+                    <p>Anda tidak bisa mengirim tanggapan, kolom<br> tanggapan sudah ditutup</p><a class="btn btn-primary btn-medium cls-tnggapan" href="#">Tutup Tanggapan</a>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="ConfirmNotif" tabindex="-1">
+      <div class="modal-dialog modal-dialog--centered modal-confirm-notif">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3>Apakah anda yakin menyetujui hasil<br> proyek yang ditampilkan?</h3>
+            <p>Jika anda menyetujui maka proyek akan selesai</p>
+            <div class="form-action"><a class="btn btn-primary btn-medium" data-dismiss="modal" data-toggle="modal" href="#">Setuju</a><a class="btn btn-border primary btn-medium" href="#" data-dismiss="modal">Batal</a></div>
           </div>
         </div>
       </div>
