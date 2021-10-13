@@ -950,6 +950,14 @@ section:last-child { margin-bottom: 0; }
 
 .btn-brief-grey:hover { text-decoration: none; color: #A8A8A8; }
 
+.btn-brief-primary { padding: 9px 15px; padding-left: 32px; position: relative; color: #F23C13; font-size: 14px; line-height: 1.3em; border-radius: 8px; font-weight: 400; text-decoration: none; display: inline-block; text-decoration: none; }
+
+.btn-brief-primary:before { content: ""; display: block; width: 24px; height: 24px; border-radius: 4px; background: #F23C13; background-image: url(../images/ic-plus-btn.png); background-position: center; background-size: 14px; background-repeat: no-repeat; position: absolute; top: 5px; left: 0; }
+
+.btn-brief-primary:hover { text-decoration: none; color: #F23C13; }
+
+.btn-brief-primary.small:before { width: 20px; height: 20px; background-size: 8px; top: 10px; }
+
 .panel { background: #FFF; border-radius: 8px; border: 1px solid #ced4da; box-shadow: 4px 4px 8px #0000000F; position: relative; }
 
 .panel .back { background: #FFF; position: absolute; border-radius: 8px 8px 0 0; top: 0; left: 0; }
@@ -1070,6 +1078,8 @@ hr.line { margin: 0 38px; }
 
 .proyek__detail:last-child { margin-bottom: 0 !important; }
 
+.proyek__detail .col-md-6:last-child h4 { padding-left: 55px; }
+
 .proyek__detail .status-card { padding: 20px; background: #F4D9D3; border: 1px solid #F23C13; border-radius: 8px; display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; }
 
 .proyek__detail .status-card .icon { width: 52px; height: 52px; margin-right: 13px; }
@@ -1098,11 +1108,13 @@ hr.line { margin: 0 38px; }
 
 .proyek__detail .status-card.card-progress { display: block; float: right; }
 
-.proyek__detail .status-card.card-progress .progress-bar { margin-bottom: 18px; }
+.proyek__detail .status-card.card-progress .progress-bar { margin-bottom: 5px; }
 
 .proyek__detail .status-card.card-progress .progress-bar .pb p { font-size: 20px; line-height: 1.3em; }
 
 .proyek__detail .status-card.card-progress .progress-bar .pb-block { background: #fff; }
+
+.proyek__detail .status-card.card-progress .stat { -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
 .proyek__detail .status-card.card-progress .stat span, .proyek__detail .status-card.card-progress .stat b { display: inline-block; vertical-align: middle; }
 
@@ -1124,13 +1136,21 @@ hr.line { margin: 0 38px; }
 
 .proyek__wrap-detail .ic-check img { width: 100%; height: 100%; }
 
-.proyek__wrap-detail .pryk-type { border: 0; width: auto; padding: 5px; border: 1px solid #e5e5e5; border-radius: 8px; }
+.proyek__wrap-detail .pt-inner { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.proyek__wrap-detail .pryk-type { border: 0; width: -webkit-max-content; width: -moz-max-content; width: max-content; padding: 5px; border: 1px solid #e5e5e5; border-radius: 8px; }
 
 .proyek__wrap-detail .pryk-type .nav-item { margin-right: 8px; }
 
 .proyek__wrap-detail .pryk-type .nav-link { padding: 8px 12px; font-size: 12px; line-height: 1.3em; border: 0; border-radius: 5px; }
 
 .proyek__wrap-detail .pryk-type .nav-link.active { border: 0; background: #F23C13; color: #fff; }
+
+.proyek__wrap-detail .icn-info { width: 24px; height: 24px; text-align: center; border: 1px solid #767676; border-radius: 50%; position: relative; margin-left: 20px; cursor: pointer; }
+
+.proyek__wrap-detail .icn-info:hover .box-info { opacity: 1; visibility: visible; }
+
+.proyek__wrap-detail .icn-info .box-info { position: absolute; left: calc(100% + 16px); top: 0; transition: all .4s ease-in-out; opacity: 0; visibility: hidden; min-width: 200px; padding: 10px; border: 1px solid #767676; border-radius: 8px; background: #FFF; font-size: 12px; line-height: 20px; color: #000; box-shadow: 4px 4px 8px #6C6C6C0F; text-align: left; z-index: 2; }
 
 .proyek__wrap-detail .timeline { width: 100%; max-width: 440px; float: right; position: relative; max-height: 380px; overflow: hidden; transition: all .4s linear; }
 
@@ -1255,6 +1275,10 @@ hr.line { margin: 0 38px; }
 .modal-ulas-proyek .action-btn p { display: none; }
 
 .modal-ulas-proyek .action-btn .btn + .btn { margin-left: 10px; }
+
+.modal-ulas-proyek .add-morerev { text-align: center; font-size: 12px; line-height: 16px; }
+
+.modal-ulas-proyek .add-morerev .btn-brief-primary { margin-left: 16px; }
 
 .modal-ulas-proyek .komentar-wrap { max-height: 0; transition: all .4s ease-in-out; overflow: hidden; opacity: 0; visibility: hidden; }
 
