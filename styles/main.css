@@ -1006,7 +1006,7 @@ hr.line { margin: 0 38px; }
 
 .proyek-list_table table { width: 100%; margin-bottom: 32px; }
 
-.proyek-list_table table th { font-weight: 400; color: #A0A0A0; font-size: 14px; line-height: 1.5em; }
+.proyek-list_table table th { font-weight: 400; color: #A0A0A0; font-size: 14px; line-height: 1.5em; padding: 14px; }
 
 .proyek-list_table table .prjct-name { font-weight: 600; font-size: 16px; line-height: 1.5em; }
 
@@ -1038,7 +1038,7 @@ hr.line { margin: 0 38px; }
 
 .proyek-list_table table tbody tr:hover { cursor: pointer; border-color: #F23C13; }
 
-.proyek-list_table table tbody td { font-size: 14px; line-height: 1.5em; border-top: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED; }
+.proyek-list_table table tbody td { padding: 14px; font-size: 14px; line-height: 1.5em; border-top: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED; }
 
 .proyek-list_table table tbody td:first-child { border-radius: 8px 0 0 8px; border-left: 1px solid #EDEDED; }
 
