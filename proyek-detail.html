@@ -303,8 +303,10 @@
                                   <div class="text">
                                     <label>Status Proyek</label><span class="date-deadline">9 Mei 2021</span>
                                   </div>
-                                  <div class="see-calendar"><a href="#">Lihat Kalender
-                                      <div class="ic"><img src="images/ic-calendar.png" alt="ic-calendar"/></div></a></div>
+                                  <div class="see-calendar"><a>Lihat Kalender
+                                      <div class="ic date">
+                                        <input class="form-control" type="text"/><img src="images/ic-calendar.png" alt="ic-calendar"/>
+                                      </div></a></div>
                                   <div class="aksen"><img src="images/img-deadline-proyek.png" alt="img-aksen"/></div>
                                 </div>
                                 <div class="note">
@@ -596,7 +598,7 @@
                   </div>
                 </div>
                 <div class="action-btn"><a class="btn btn-primary btn-medium confirm-tnggapan" href="#ConfirmNotif" data-toggle="modal" data-target="#ConfirmNotif">Setujui Hasil</a></div>
-                <div class="add-morerev"><span>Anda telah mencapai batas revisi</span><a class="btn-brief-primary small" href="#">Tambah Refisi</a></div>
+                <div class="add-morerev"><span>Anda telah mencapai batas revisi</span><a class="btn-brief-primary small" href="#moreRevise" data-toggle="modal" data-dismiss="modal" data-target="#moreRevise">Tambah Refisi</a></div>
                 <div class="komentar-wrap">
                   <div class="box-komentar">
                     <label>Komentar</label>
@@ -742,6 +744,26 @@
           </div>
         </div>
       </div>
+      <div class="modal" id="moreRevise" tabindex="-1">
+        <div class="modal-dialog modal-dialog--centered modal-more-revise">
+          <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <h3>Revisi Tambahan</h3>
+                  <p>Lorem ipsum doloer sit amet</p>
+                  <div class="brief-type"><span>Keahlian :</span><b>Branding</b></div>
+                </div>
+                <div class="col-md-5">
+                  <div class="price"><b>Rp 200.000</b><span>/ 1x revisi</span></div>
+                </div>
+              </div>
+              <h3></h3>
+              <div class="form-action"><a class="btn btn-primary btn-medium" href="#" data-dismiss="modal">Tambah</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="modal" id="ulasProyek" tabindex="-1">
       <div class="modal-dialog modal-dialog--centered modal-ulas-proyek">
@@ -861,7 +883,7 @@
                 </div>
               </div>
               <div class="action-btn"><a class="btn btn-primary btn-medium confirm-tnggapan" href="#ConfirmNotif" data-toggle="modal" data-target="#ConfirmNotif">Setujui Hasil</a></div>
-              <div class="add-morerev"><span>Anda telah mencapai batas revisi</span><a class="btn-brief-primary small" href="#">Tambah Refisi</a></div>
+              <div class="add-morerev"><span>Anda telah mencapai batas revisi</span><a class="btn-brief-primary small" href="#moreRevise" data-toggle="modal" data-dismiss="modal" data-target="#moreRevise">Tambah Refisi</a></div>
               <div class="komentar-wrap">
                 <div class="box-komentar">
                   <label>Komentar</label>
@@ -1003,6 +1025,26 @@
             <h3>Apakah anda yakin menyetujui hasil<br> proyek yang ditampilkan?</h3>
             <p>Jika anda menyetujui maka proyek akan selesai</p>
             <div class="form-action"><a class="btn btn-primary btn-medium" data-dismiss="modal" data-toggle="modal" href="#">Setuju</a><a class="btn btn-border primary btn-medium" href="#" data-dismiss="modal">Batal</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="moreRevise" tabindex="-1">
+      <div class="modal-dialog modal-dialog--centered modal-more-revise">
+        <div class="modal-content"><a class="close" href="#" data-dismiss="modal" aria-label="Close"><img src="images/ic-xclose.svg"/></a>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-7">
+                <h3>Revisi Tambahan</h3>
+                <p>Lorem ipsum doloer sit amet</p>
+                <div class="brief-type"><span>Keahlian :</span><b>Branding</b></div>
+              </div>
+              <div class="col-md-5">
+                <div class="price"><b>Rp 200.000</b><span>/ 1x revisi</span></div>
+              </div>
+            </div>
+            <h3></h3>
+            <div class="form-action"><a class="btn btn-primary btn-medium" href="#" data-dismiss="modal">Tambah</a></div>
           </div>
         </div>
       </div>
