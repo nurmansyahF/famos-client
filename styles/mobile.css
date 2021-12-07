@@ -1,6 +1,27 @@
 /* ------------------------------------------------------------------------------------------------ */
 /* Responsive */
 /* ------------------------------------------------------------------------------------------------ */
+/* Header */
+h1.logo { text-align: center; margin-bottom: 46px; }
+
+h1.logo .header__logo { height: 24px; display: inline-block; margin: 0 auto; }
+
+h1.logo .header__logo img { display: block; width: auto; max-height: 24px; }
+
+.logo.logo-mobile { display: none; }
+
+.logo.logo-mobile .header__logo img { height: 18px; }
+
+@media (max-width: 767px) { .header .user-header .notif { position: inherit; } }
+
+@media (max-width: 767px) { .header-notif__box { right: 10px; left: inherit; margin: 0 auto; max-width: 380px; min-width: 380px; } }
+
+@media (max-width: 400px) { .header-notif__box { right: 0; max-width: 300px; min-width: 290px; } }
+
+@media (max-width: 767px) { body.notif-open .header-notif__box { top: 80px; } }
+
+@media (max-width: 767px) { body.notif-open .header.sticky .header-notif__box { top: 110px; } }
+
 @media (max-width: 1024px) { .bootstrap-select > .dropdown-toggle { display: block !important; width: 100%; }
   .header { margin-left: 0; padding: 18px 22px; }
   .header .write-brief { position: fixed; right: 36px; bottom: 36px; }
@@ -145,26 +166,5 @@
   .pembayaran-detail .pembayaran-title .deadlinebayar { position: relative; left: auto; right: auto; margin: 0 auto; text-align: center; }
   .pembayaran-detail__bank .box-pilihbank .col-3 { -webkit-flex: 0 0 50%; -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
   .pembayaran-detail__bank .detail-bank .col-4 { -webkit-flex: 0 0 50%; -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; } }
-
-/* Header */
-h1.logo { text-align: center; margin-bottom: 46px; }
-
-h1.logo .header__logo { height: 24px; display: inline-block; margin: 0 auto; }
-
-h1.logo .header__logo img { display: block; width: auto; max-height: 24px; }
-
-.logo.logo-mobile { display: none; }
-
-.logo.logo-mobile .header__logo img { height: 18px; }
-
-@media (max-width: 767px) { .header .user-header .notif { position: inherit; } }
-
-@media (max-width: 767px) { .header-notif__box { right: 10px; left: inherit; margin: 0 auto; max-width: 380px; min-width: 380px; } }
-
-@media (max-width: 400px) { .header-notif__box { right: 0; max-width: 300px; min-width: 290px; } }
-
-@media (max-width: 767px) { body.notif-open .header-notif__box { top: 80px; } }
-
-@media (max-width: 767px) { body.notif-open .header.sticky .header-notif__box { top: 110px; } }
 
 /*# sourceMappingURL=mobile.css.map */
